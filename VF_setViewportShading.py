@@ -2,12 +2,12 @@ bl_info = {
 	"name": "VF Set Viewport Shading",
 	"author": "John Einselen - Vectorform LLC",
 	"version": (0, 0, 2),
-	"blender": (2, 80, 0),
+	"blender": (2, 83, 0),
 	"location": "View3D > View",
 	"description": "Sets viewport shading from the menu, allowing for keyboard shortcuts to specific modes",
 	"warning": "inexperienced developer, use at your own risk",
-	"wiki_url": "",
-	"tracker_url": "",
+	"doc_url": "https://github.com/jeinselenVF/VF-BlenderSetViewportShading",
+	"tracker_url": "https://github.com/jeinselenVF/VF-BlenderSetViewportShading/issues",
 	"category": "3D View"}
 
 import bpy
@@ -68,26 +68,26 @@ def register():
 	kc = wm.keyconfigs.addon
 	if kc:
 		km = wm.keyconfigs.addon.keymaps.new(name='3D View', space_type='VIEW_3D')
-#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_0', 'PRESS')
-		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F1', 'PRESS', alt=True)
+		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_1', 'PRESS')
+#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F1', 'PRESS', alt=True)
 		kmi.properties.rendertype = 'WIREFRAME'
 		addon_keymaps.append((km, kmi))
 	if kc:
 		km = wm.keyconfigs.addon.keymaps.new(name='3D View', space_type='VIEW_3D')
-#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_1', 'PRESS')
-		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F2', 'PRESS', alt=True)
+		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_2', 'PRESS')
+#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F2', 'PRESS', alt=True)
 		kmi.properties.rendertype = 'SOLID'
 		addon_keymaps.append((km, kmi))
 	if kc:
 		km = wm.keyconfigs.addon.keymaps.new(name='3D View', space_type='VIEW_3D')
-#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_2', 'PRESS')
-		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F3', 'PRESS', alt=True)
+		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_3', 'PRESS')
+#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F3', 'PRESS', alt=True)
 		kmi.properties.rendertype = 'MATERIAL'
 		addon_keymaps.append((km, kmi))
 	if kc:
 		km = wm.keyconfigs.addon.keymaps.new(name='3D View', space_type='VIEW_3D')
-#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_3', 'PRESS')
-		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F4', 'PRESS', alt=True)
+		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'NUMPAD_0', 'PRESS')
+#		kmi = km.keymap_items.new(VF_SET_SHADING_OT_set_viewport_shading.bl_idname, 'F4', 'PRESS', alt=True)
 		kmi.properties.rendertype = 'RENDERED'
 		addon_keymaps.append((km, kmi))
 

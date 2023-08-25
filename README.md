@@ -8,3 +8,5 @@ Adds view menu items and keyboard shortcuts for setting the current view mode (w
 - Open Blender Preferences and navigate to the "Add-ons" tab
 - Install and enable the Add-on
 - It will show up at the bottom of the `View` menu of 3D viewports
+
+The default keyboard shortcuts are for the number pad of a full size keyboard, but you can easily right-click any of the options to set your own.
