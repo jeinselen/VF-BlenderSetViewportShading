@@ -1,5 +1,7 @@
+> [!NOTE]
+> This add-on for earlier Blender versions has been migrated into the [Production Kit extension](https://github.com/jeinselen/Blender-ProductionKit) for Blender 4.2+
+
 # VF-BlenderSetViewportShading
-This add-on was designed for Blender version 2.8-4.1 (though not all previous versions may be fully supported). For Blender 4.2 and onwards, [please see the new Production Kit extension](https://github.com/jeinselen/Blender-ProductionKit).
 
 Adds view menu items and keyboard shortcuts for setting the current view mode (wireframe, solid, preview, and rendered)
 
